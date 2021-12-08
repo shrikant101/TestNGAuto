@@ -16,7 +16,7 @@ public class HomePage extends BasePage {
     //String baseURL = "https://google.com/main.jspx";
     //String baseURL = "https://google.com/main.jspx";
 
-    String basePMURL = "https://whf00bhe.in.oracle.com:9001/com.ofss.fc.ui.view.obepm/faces/obepm.jspx";
+    String basePMURL = "https://google.com/main.jspx";
  // *************PAGE INSTANTIATIONS*************
  		BasePage basepage = new BasePage(driver, wait);
 
