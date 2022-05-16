@@ -1,22 +1,307 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Config Test Suite" >
-    <listeners>
-        <listener class-name="utils.Listeners.TestListener"/>
-        <listener class-name="utils.Listeners.AnnotationTransformer"/>
-    </listeners>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AppHdr xmlns="urn:iso:std:iso:20022:tech:xsd:head.001.001.02">
+    <Fr>
+        <FIId>
+            <FinInstnId>
+                <BICFI>WPACAUSRXXX</BICFI>
+            </FinInstnId>
+        </FIId>
+    </Fr>
+    <To>
+        <FIId>
+            <FinInstnId>
+                <BICFI>WPACAU2FOBU</BICFI>
+            </FinInstnId>
+        </FIId>
+    </To>
+    <BizMsgIdr>TC22MT202A1</BizMsgIdr>
+    <MsgDefIdr>pacs.009.001.08</MsgDefIdr>
+    <BizSvc>swift.cbprplus.02</BizSvc>
+    <CreDt>2022-05-16T17:12:05.325+10:00</CreDt>
+    <Prty>NORM</Prty>
+</AppHdr>
 
-    <test name="ConfigTest">
-        <classes>
-         <class name="tests.PM010Test"/>
-        <!-- <class name="tests.CNM01Test"/> -->
-		<!-- <class name="tests.LCM07Test"/> -->
-        <!-- <class name="tests.CS24Test"/> -->
-        <!-- <class name="tests.CS16Test"/> -->
-        <!-- <class name="tests.PR006Test"/> -->
-        <!--  <class name="tests.PR005Test"/> -->
-            <!-- <class name="tests.OR276Test"/> -->
-           <!--  <class name="tests.CS22Test"/> -->
-        </classes>
-    </test>
-</suite>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.009.001.08">
+    <FICdtTrf>
+        <GrpHdr>
+            <MsgId>TC22MT202A1</MsgId>
+            <CreDtTm>2022-05-16T17:12:05.388+10:00</CreDtTm>
+            <NbOfTxs>1</NbOfTxs>
+            <SttlmInf>
+                <SttlmMtd>INDA</SttlmMtd>
+                <SttlmAcct>
+                    <Id>
+                        <Othr>
+                            <Id>WSF0001976</Id>
+                        </Othr>
+                    </Id>
+                </SttlmAcct>
+            </SttlmInf>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <InstrId>TC22MT202A1</InstrId>
+                <EndToEndId>FXC222844151</EndToEndId>
+                <UETR>1dccba8f-9b3a-446f-a1cd-7531c371c81a</UETR>
+            </PmtId>
+            <PmtTpInf>
+                <SvcLvl>
+                    <Cd>G004</Cd>
+                </SvcLvl>
+            </PmtTpInf>
+            <IntrBkSttlmAmt Ccy="AUD">415.28</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2020-10-14</IntrBkSttlmDt>
+            <InstgAgt>
+                <FinInstnId>
+                    <BICFI>WPACAUSRXXX</BICFI>
+                </FinInstnId>
+            </InstgAgt>
+            <InstdAgt>
+                <FinInstnId>
+                    <BICFI>WPACAU2FOBU</BICFI>
+                </FinInstnId>
+            </InstdAgt>
+            <Dbtr>
+                <FinInstnId>
+                    <BICFI>WPACAUSRXXX</BICFI>
+                </FinInstnId>
+            </Dbtr>
+            <Cdtr>
+                <FinInstnId>
+                    <BICFI>WPACAU2SXXX</BICFI>
+                </FinInstnId>
+            </Cdtr>
+            <CdtrAcct>
+                <Id>
+                    <Othr>
+                        <Id>NSW0505978</Id>
+                    </Othr>
+                </Id>
+            </CdtrAcct>
+        </CdtTrfTxInf>
+    </FICdtTrf>
+</Document>
+
+Translated Message is:
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AppHdr xmlns="urn:iso:std:iso:20022:tech:xsd:head.001.001.02">
+    <Fr>
+        <FIId>
+            <FinInstnId>
+                <BICFI>WPACAUSRXXX</BICFI>
+            </FinInstnId>
+        </FIId>
+    </Fr>
+    <To>
+        <FIId>
+            <FinInstnId>
+                <BICFI>WPACAU2FOBU</BICFI>
+            </FinInstnId>
+        </FIId>
+    </To>
+    <BizMsgIdr>TC22MT202A1</BizMsgIdr>
+    <MsgDefIdr>pacs.009.001.08</MsgDefIdr>
+    <BizSvc>swift.cbprplus.02</BizSvc>
+    <CreDt>2022-05-16T17:12:06.054+10:00</CreDt>
+    <Prty>NORM</Prty>
+</AppHdr>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.009.001.08">
+    <FICdtTrf>
+        <GrpHdr>
+            <MsgId>TC22MT202A1</MsgId>
+            <CreDtTm>2022-05-16T17:12:06.054+10:00</CreDtTm>
+            <NbOfTxs>1</NbOfTxs>
+            <SttlmInf>
+                <SttlmMtd>INDA</SttlmMtd>
+                <SttlmAcct>
+                    <Id>
+                        <Othr>
+                            <Id>WSF0001976</Id>
+                        </Othr>
+                    </Id>
+                </SttlmAcct>
+            </SttlmInf>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <InstrId>TC22MT202A1</InstrId>
+                <EndToEndId>FXC222844151</EndToEndId>
+                <UETR>1dccba8f-9b3a-446f-a1cd-7531c371c81a</UETR>
+            </PmtId>
+            <PmtTpInf>
+                <SvcLvl>
+                    <Cd>G004</Cd>
+                </SvcLvl>
+            </PmtTpInf>
+            <IntrBkSttlmAmt Ccy="AUD">415.28</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2020-10-14</IntrBkSttlmDt>
+            <InstgAgt>
+                <FinInstnId>
+                    <BICFI>WPACAUSRXXX</BICFI>
+                </FinInstnId>
+            </InstgAgt>
+            <InstdAgt>
+                <FinInstnId>
+                    <BICFI>WPACAU2FOBU</BICFI>
+                </FinInstnId>
+            </InstdAgt>
+            <Dbtr>
+                <FinInstnId>
+                    <BICFI>WPACAUSRXXX</BICFI>
+                </FinInstnId>
+            </Dbtr>
+            <Cdtr>
+                <FinInstnId>
+                    <BICFI>WPACAU2SXXX</BICFI>
+                </FinInstnId>
+            </Cdtr>
+            <CdtrAcct>
+                <Id>
+                    <Othr>
+                        <Id>NSW0505978</Id>
+                    </Othr>
+                </Id>
+            </CdtrAcct>
+        </CdtTrfTxInf>
+    </FICdtTrf>
+</Document>
+
+Translated Message is:
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AppHdr xmlns="urn:iso:std:iso:20022:tech:xsd:head.001.001.02">
+    <Fr>
+        <FIId>
+            <FinInstnId>
+                <BICFI>WPACAUSRXXX</BICFI>
+            </FinInstnId>
+        </FIId>
+    </Fr>
+    <To>
+        <FIId>
+            <FinInstnId>
+                <BICFI>WPACAU2FOBU</BICFI>
+            </FinInstnId>
+        </FIId>
+    </To>
+    <BizMsgIdr>TC22MT202A1</BizMsgIdr>
+    <MsgDefIdr>pacs.009.001.08</MsgDefIdr>
+    <BizSvc>swift.cbprplus.02</BizSvc>
+    <CreDt>2022-05-16T17:12:06.149+10:00</CreDt>
+    <Prty>NORM</Prty>
+</AppHdr>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.009.001.08">
+    <FICdtTrf>
+        <GrpHdr>
+            <MsgId>TC22MT202A1</MsgId>
+            <CreDtTm>2022-05-16T17:12:06.149+10:00</CreDtTm>
+            <NbOfTxs>1</NbOfTxs>
+            <SttlmInf>
+                <SttlmMtd>INDA</SttlmMtd>
+                <SttlmAcct>
+                    <Id>
+                        <Othr>
+                            <Id>WSF0001976</Id>
+                        </Othr>
+                    </Id>
+                </SttlmAcct>
+            </SttlmInf>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <InstrId>TC22MT202A1</InstrId>
+                <EndToEndId>FXC222844151</EndToEndId>
+                <UETR>1dccba8f-9b3a-446f-a1cd-7531c371c81a</UETR>
+            </PmtId>
+            <PmtTpInf>
+                <SvcLvl>
+                    <Cd>G004</Cd>
+                </SvcLvl>
+            </PmtTpInf>
+            <IntrBkSttlmAmt Ccy="AUD">415.28</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2020-10-14</IntrBkSttlmDt>
+            <InstgAgt>
+                <FinInstnId>
+                    <BICFI>WPACAUSRXXX</BICFI>
+                </FinInstnId>
+            </InstgAgt>
+            <InstdAgt>
+                <FinInstnId>
+                    <BICFI>WPACAU2FOBU</BICFI>
+                </FinInstnId>
+            </InstdAgt>
+            <Dbtr>
+                <FinInstnId>
+                    <BICFI>WPACAUSRXXX</BICFI>
+                </FinInstnId>
+            </Dbtr>
+            <Cdtr>
+                <FinInstnId>
+                    <BICFI>WPACAU2SXXX</BICFI>
+                </FinInstnId>
+            </Cdtr>
+            <CdtrAcct>
+                <Id>
+                    <Othr>
+                        <Id>NSW0505978</Id>
+                    </Othr>
+                </Id>
+            </CdtrAcct>
+            <Purp>
+                <Cd>TEST</Cd>
+            </Purp>
+        </CdtTrfTxInf>
+    </FICdtTrf>
+</Document>
+
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.074 s - in com.paymentcomponents.converter.cbpr.demo.TranslateMtToMxTest
+[INFO] Running com.paymentcomponents.converter.cbpr.demo.TranslateMxToMtTest
+Translated Message is:
+{1:F01TESTBICZXXXX0000000000}{2:O2021712220516TESTBICYXXXX00000000002205161712N}{3:{121:00000000-0000-4000-8000-000000000000}}{4:
+:20:BBBB/120928-FICT
+:21:ABC/4562/2012-0+
+:32A:120929JPY10000000,
+:52A:/DBTRACCT
+BBBBUS33
+:56A:/INTERAGTACCT
+INTERBIC
+:57A:/CDTRAGTACCT
+AAAAJPJT
+:58A:/CDTRACCT
+AAAAGB2L
+:72:/REC/2112323223
+-}{5:{PDE:}}
+Translated Message is:
+{1:F01TESTBICZXXXX0000000000}{2:O2021712220516TESTBICYXXXX00000000002205161712N}{3:{121:00000000-0000-4000-8000-000000000000}}{4:
+:20:BBBB/120928-FICT
+:21:ABC/4562/2012-0+
+:32A:120929JPY10000000,
+:52A:/DBTRACCT
+BBBBUS33
+:56A:/INTERAGTACCT
+INTERBIC
+:57A:/CDTRAGTACCT
+AAAAJPJT
+:58A:/CDTRACCT
+AAAAGB2L
+:72:/REC/2112323223
+-}{5:{PDE:}}
+Translated Message is:
+{1:F01TESTBICZXXXX0000000000}{2:O2021712220516TESTBICYXXXX00000000002205161712N}{3:{121:00000000-0000-4000-8000-000000000000}}{4:
+:20:BBBB/120928-FICT
+:21:ABC/4562/2012-0+
+:32A:120929JPY10000000,
+:52A:/DBTRACCT
+BBBBUS33
+:56A:/INTERAGTACCT
+INTERBIC
+:57A:/CDTRAGTACCT
+AAAAJPJT
+:58A:/CDTRACCT
+AAAAGB2L
+:72:/REC/2112323223
+-}{5:{PDE:}}
